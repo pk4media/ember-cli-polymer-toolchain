@@ -17,7 +17,7 @@ module.exports = {
   contentFor: function(type) {
     if (type === 'head-footer') {
       return [
-        '<script src="assets/webcomponents-lite.js"></script>',
+        '<script src="assets/webcomponentsjs/webcomponents-lite.js"></script>',
         '<script>window.Polymer = window.Polymer || {};window.Polymer.dom = "shadow";</script>',
         '<link rel="import" href="assets/vulcanized.html">'
       ];
@@ -25,9 +25,9 @@ module.exports = {
   },
 
   treeForPublic: function(tree) {
-    var webcomponents = funnel('bower_components/webcomponentsjs', {
+    var webcomponents = funnel('bower_components', {
       files: [
-        'webcomponents-lite.js',
+        'webcomponentsjs/webcomponents-lite.js',
         'polymer/polymer.html'
       ],
       destDir: '/assets'
