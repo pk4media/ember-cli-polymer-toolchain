@@ -1,7 +1,7 @@
 # ember-cli-polymer-toolchain
 Ember CLI Toolchain for Polymer 1.X
 
-##Local Installation
+##Installation locally
 1. In this project's directory setup make available via npm
 
 ```
@@ -12,4 +12,10 @@ npm link
 
 ```
 npm link ember-cli-polymer-toolchain
+```
+
+3. Install additional packages in parent app via bower:
+```
+bower install --save Polymer/polymer
+bower install --save webcomponentsjs
 ```
