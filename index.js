@@ -9,11 +9,7 @@ var htmlAutoprefixer = require('html-autoprefixer');
 
 module.exports = {
   name: 'ember-cli-polymer-toolchain',
-
-  isDevelopingAddon: function() {
-    return true;
-  },
-
+  
   contentFor: function(type) {
     if (type === 'head-footer') {
       return [
