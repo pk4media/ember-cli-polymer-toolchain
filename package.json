@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-polymer-toolchain",
-  "version": "0.0.0",
+  "version": "1.1.0",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -11,17 +11,21 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "pk4media/ember-cli-polymer-toolchain",
   "engines": {
     "node": ">= 0.10.0"
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "ember-cli-babel": "^5.0.0",
+    "html-autoprefixer": "^0.3.7",
+    "broccoli-vulcanize": "pk4media/broccoli-vulcanize",
+    "broccoli-funnel": "^0.2.3",
+    "broccoli-merge-trees": "^0.2.2"
+  },
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
-    "broccoli-funnel": "^0.2.3",
-    "broccoli-merge-trees": "^0.2.2",
-    "broccoli-vulcanize": "pk4media/broccoli-vulcanize",
     "ember-cli": "0.2.3",
     "ember-cli-app-version": "0.3.3",
     "ember-cli-content-security-policy": "0.4.0",
@@ -39,10 +43,6 @@
   "keywords": [
     "ember-addon"
   ],
-  "dependencies": {
-    "ember-cli-babel": "^5.0.0",
-    "html-autoprefixer": "^0.3.7"
-  },
   "ember-addon": {
     "configPath": "tests/dummy/config"
   }
