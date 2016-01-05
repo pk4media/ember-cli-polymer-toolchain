@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "ember-cli-babel": "^5.0.0",
-    "html-autoprefixer": "^0.3.7",
+    "html-autoprefixer": "^0.3.8",
     "broccoli-vulcanize": "pk4media/broccoli-vulcanize",
     "broccoli-funnel": "^0.2.3",
     "broccoli-merge-trees": "^0.2.2"
