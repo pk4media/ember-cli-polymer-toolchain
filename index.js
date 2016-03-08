@@ -14,6 +14,7 @@ module.exports = {
     if (type === 'head-footer') {
       return [
         '<script src="assets/webcomponentsjs/webcomponents-lite.js"></script>',
+        '<script src="assets/web-animations-js/web-animations.min.js"></script>',
         '<script>window.Polymer = window.Polymer || {};window.Polymer.dom = "shadow";</script>',
         '<link rel="import" href="assets/vulcanized.html">'
       ];
@@ -24,6 +25,7 @@ module.exports = {
     var webcomponents = funnel('bower_components', {
       files: [
         'webcomponentsjs/webcomponents-lite.js',
+        'web-animations-js/web-animations.min.js',
         'polymer/polymer.html'
       ],
       destDir: '/assets'
