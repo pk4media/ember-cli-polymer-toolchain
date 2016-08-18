@@ -9,14 +9,15 @@ var htmlAutoprefixer = require('html-autoprefixer');
 
 module.exports = {
   name: 'ember-cli-polymer-toolchain',
-  
-  contentFor: function(type) {
+
+  contentFor: function(type, config) {
     if (type === 'head-footer') {
+      var rootURL = config.rootURL;
       return [
-        '<script src="assets/webcomponentsjs/webcomponents-lite.js"></script>',
-        '<script src="assets/web-animations-js/web-animations.min.js"></script>',
+        `<script src="${rootURL}assets/webcomponentsjs/webcomponents-lite.js"></script>`,
+        `<script src="${rootURL}assets/web-animations-js/web-animations.min.js"></script>`,
         '<script>window.Polymer = window.Polymer || {};window.Polymer.dom = "shadow";</script>',
-        '<link rel="import" href="assets/vulcanized.html">'
+        `<link rel="import" href="${rootURL}assets/vulcanized.html">`
       ];
     }
   },
